@@ -1,0 +1,12 @@
+# Flutter build files
+flutter_ui/build/
+flutter_ui/.dart_tool/
+# platform build files are not necessary
+flutter_ui/android/
+flutter_ui/ios/
+flutter_ui/macos/
+flutter_ui/windows/
+flutter_ui/linux/
+
+# Python virtual environment
+bill_calculator/venv/

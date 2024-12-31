@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  frontend:
+    build: ./flutter_ui
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./flutter_ui:/app
+  backend:
+    build: ./bill_calculator
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./bill_calculator:/app
+    environment:
+      - FLASK_ENV=development
